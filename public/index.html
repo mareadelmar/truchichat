@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>truchichat</title>
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-database.js"></script>
+
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap"
+            rel="stylesheet"
+        /> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap"
+            rel="stylesheet"
+        />
+        <link type="text/css" href="styles.css" rel="stylesheet" />
+        <link rel="icon" href="images/panchito.png" type="image/jpg" />
+    </head>
+    <body>
+        <section class="container">
+            <div class="login-container">
+                <div class="titulo-container">
+                    <i><img src="images/panchito.png" alt="" id="icon" /></i>
+                    <h1 class="titulo">truchichat</h1>
+                </div>
+                <h2 class="name">Bienvenide</h2>
+                <p class="email"></p>
+                <img src="images/avatar.png" alt="" class="login-img" />
+
+                <button id="login" class="btn">entrar a truchichatear</button>
+                <button id="logout" class="btn">salir del truchichat</button>
+                <div class="message-container">
+                    <ul class="messages"></ul>
+                    <input
+                        type="text"
+                        placeholder="Escribí tu mensaje..."
+                        class="input-message"
+                    />
+                    <button id="btn-push">Enviar mensaje</button>
+                </div>
+            </div>
+        </section>
+        <script>
+            const firebaseConfig = {
+                apiKey: "AIzaSyBjaga_4SojZ-UXT8HErjZEhVlFW4UVNiQ",
+                authDomain: "truchi-chat.firebaseapp.com",
+                projectId: "truchi-chat",
+                storageBucket: "truchi-chat.appspot.com",
+                messagingSenderId: "492395144157",
+                appId: "1:492395144157:web:a292f3d8bb4a4a5df8cc34",
+            };
+            firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>

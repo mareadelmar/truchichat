@@ -1,0 +1,125 @@
+body {
+    width: 100%;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(images/fondo.jpg);
+    background-repeat: repeat;
+}
+
+.container {
+    *max-height: 600px;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 7px;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 1);
+    background: #eceff1;
+}
+
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: #6b4ea8;
+    font-weight: bold;
+    font-size: 18px;
+    margin: -10px 0 3px;
+    text-align: center;
+    padding: 7px;
+}
+
+.titulo-container {
+    display: flex;
+    *background-color: #05e0e9;
+    width: 100%;
+}
+
+#icon {
+    width: 88px;
+    padding: 0;
+    margin: 0 0 0 10px;
+}
+
+.titulo {
+    font-size: 37px;
+    *color: #eceff1;
+    color: #132743;
+    margin: 5px 0 0;
+    padding: 10px 0 0 10px;
+    *font-family: "Chakra Petch", sans-serif;
+    font-family: "RocknRoll One", sans-serif;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    width: 70%;
+    background: #d7385e;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.login-img {
+    border-radius: 50%;
+    width: 42%;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.email {
+    opacity: 0.8;
+    margin: 0 0 8px 0;
+    font-size: 12px;
+    font-style: italic;
+}
+
+#logout {
+    display: none;
+}
+
+.message-container {
+    width: 91%;
+    display: none;
+}
+
+.messages {
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    height: 100px;
+    overflow: auto;
+}
+
+.messages li {
+    margin: 10px 6px;
+    font-size: 14px;
+}
+
+.message-name {
+    color: #6b4ea8;
+}
+
+.input-message {
+    width: 89%;
+    margin-left: 10px;
+}
+
+#btn-push {
+    padding: 3px;
+    margin: 20px 10px 20px;
+    float: right;
+}
